@@ -1,0 +1,67 @@
+$color-bg-footer: #686de0;
+$color-bg: #c3cfe2;
+$color-white: #fff;
+$padding-topbottom: 20px;
+$padding-sides: 30px;
+$border-radius: 15px;
+
+body {
+  background-color: $color-bg;
+  padding: $padding-sides $padding-topbottom;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.testimonial {
+  width: 330px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+
+  &__text {
+    height: 185px;
+    background-color: $color-white;
+    padding: $padding-topbottom $padding-sides;
+    border-radius: $border-radius $border-radius 0px 0px;
+    font-weight: 550;
+    color: darkslategrey;
+    line-height: 2;
+  }
+  &__image {
+    text-align: center;
+    background: linear-gradient(
+      to bottom,
+      $color-white 50%,
+      $color-bg-footer 50%
+    );
+    img {
+      vertical-align: middle;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid $color-white;
+    }
+  }
+
+  &__footer {
+    height: 50px;
+    background-color: $color-bg-footer;
+    padding: 10px $padding-topbottom $padding-sides;
+    border-radius: 0px 0px $border-radius $border-radius;
+    text-align: center;
+    p {
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 15px;
+      margin: 0px 0px 3px 0px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 13px;
+      color: lightgray;
+    }
+  }
+}
