@@ -5,10 +5,11 @@ $padding-topbottom: 20px;
 $padding-sides: 30px;
 $border-radius: 15px;
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
   background-color: $color-bg;
   padding: $padding-sides $padding-topbottom;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
 }
 
